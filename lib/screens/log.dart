@@ -5,6 +5,6 @@ class LogScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Log Screen", style: TextStyle(color: Colors.white));
+    return const Text("Log Screen", style: TextStyle(color: Colors.black));
   }
 }

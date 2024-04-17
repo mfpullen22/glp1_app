@@ -9,7 +9,7 @@ class ChartScreen extends StatelessWidget {
       children: [
         Text(
           "Text Blue",
-          style: TextStyle(color: Color.fromARGB(255, 77, 238, 234)),
+          style: TextStyle(color: Colors.black),
         ),
       ],
     );

@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:neubrutalism_ui/neubrutalism_ui.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,54 +8,39 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          margin: const EdgeInsets.all(10),
-          height: 100,
-          width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.white,
-              width: 1,
-            ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: NeuContainer(
+            height: 100,
+            width: MediaQuery.of(context).size.width,
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Row(
           children: [
-            Container(
-              margin: const EdgeInsets.all(10),
-              height: 100,
-              width: MediaQuery.of(context).size.width / 2 - 20,
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.white,
-                  width: 1,
-                ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8, 8, 16, 8),
+              child: NeuContainer(
+                color: Colors.teal,
+                height: 100,
+                width: MediaQuery.of(context).size.width / 2 - 20,
               ),
             ),
-            Container(
-              margin: const EdgeInsets.all(10),
-              height: 100,
-              width: MediaQuery.of(context).size.width / 2 - 20,
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.white,
-                  width: 1,
-                ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
+              child: NeuContainer(
+                height: 100,
+                width: MediaQuery.of(context).size.width / 2 - 20,
               ),
             ),
           ],
         ),
-        SizedBox(height: 10),
-        Container(
-          margin: const EdgeInsets.all(10),
-          height: 300,
-          width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.white,
-              width: 1,
-            ),
+        const SizedBox(height: 10),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: NeuContainer(
+            height: 300,
+            width: MediaQuery.of(context).size.width,
           ),
         ),
       ],

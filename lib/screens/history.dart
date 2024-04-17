@@ -5,9 +5,9 @@ class HistoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       "History Screen",
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.black),
     );
   }
 }

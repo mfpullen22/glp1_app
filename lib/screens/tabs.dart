@@ -23,21 +23,21 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Widget activePage = HomeScreen();
+    Widget activePage = const HomeScreen();
     var activePageTitle = "Home";
 
     if (_selectedPageIndex == 1) {
-      activePage = LogScreen();
+      activePage = const LogScreen();
       activePageTitle = "Log";
     }
 
     if (_selectedPageIndex == 2) {
-      activePage = ChartScreen();
+      activePage = const ChartScreen();
       activePageTitle = "Summary Chart";
     }
 
     if (_selectedPageIndex == 3) {
-      activePage = HistoryScreen();
+      activePage = const HistoryScreen();
       activePageTitle = "History";
     }
 
